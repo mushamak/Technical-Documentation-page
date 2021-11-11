@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <header>HTML Tutorial</header>
+        <ul>
+            <li>
+                <a class="link" href="#introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="link" href="#basic-examples">Basic Example</a>
+            </li>
+            <li>
+                <a class="link" href="#elements">Elements</a>
+            </li>
+            <li>
+                <a class="link" href="#attributes">Attributes</a>
+            </li>
+            <li>
+                <a class="link" href="#headings">Headings</a>
+            </li>
+            <li>
+                <a class="link" href="#paragraphs">Paragraphs</a>
+            </li>
+            <li>
+                <a class="link" href="#text-formatting">Text Formatting</a>
+            </li>
+            <li>
+                <a class="link" href="#comments">Comments</a>
+            </li>
+            <li>
+                <a class="link" href="#canvas">Canvas</a>
+            </li>
+            <li>
+                <a class="link" href="#reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main id="main-doc">
+    <!-- section starts -->
+        <section class="main-sec" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p> HTML is the standard markup language for creating Web pages.</p>
+                <p> <b> What is HTML? </b></p>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-sec" id="basic-examples">
+            <header>Basic Examples</header>
+            <article>
+                <ul>
+                    <li>All HTML documents must start with a document type declaration:
+                        <code> "!DOCTYPE html" </code>
+                    </li>
+                    <li>The HTML document itself begins with <code> < html></code> and ends with <code> < /html></code>
+
+                    </li>
+                    <li>The visible part of the HTML document is between
+
+                        <code>< body> </code> and <code>< /body></code>
+                    </li>
+                </ul>
+                <p>The "!DOCTYPE" declaration  represents the document type, and helps browsers to display web pages correctly. </p>
+                <p> It must only appear once, at the top of the page (before any HTML tags).</p>
+            </article>
+        </section>
+        <section class="main-sec" id="elements">
+            <header>Elements</header>
+            <p>The HTML element is everything from the start tag to the end tag:</p>
+            <p> <code> < tagname>  ...content < /tagname> </code> </p>
+            <span> <b> Examples of some HTML elements: </b></span>
+            <article>
+                <ul>
+                    <li> <code> < h1 > Heading < / h1 ></li></code>
+                    <li> <code> < p > Paragraph < / p ></li></code>
+                    <li> <code> < body> Body < /body ></li></code>
+                </ul>
+                <p> <b> Nested HTML Elements </b></p>
+                <ul>
+                    <li>HTML elements can be nested (this means that elements can contain other elements).</li>
+                    <li>All HTML documents consist of nested HTML elements.</li>
+                    <li>The following example contains four HTML elements <code> (< html>, < body>, < h1> and < p>).</code></li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-sec" id="attributes">
+            <header>HTML Attributes</header>
+            <p>HTML attributes provide additional information about HTML elements.</p>
+            <article>
+                <ul>
+                    <li>All HTML elements can have <b>attributes</b></li>
+                    <li>Attributes provide <b>additional information</b> about elements</li>
+                    <li>Attributes are always specified in <b>the start tag</b></li>
+                    <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+                </ul>
+                <p> <b> The href Attribute </b></p>
+                <p> The <code>< a> </ a></code> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to </p> <br>
+                <code class="href"> < a href="https://www.w3schools.com" > Visit us </ a> </code> 
+            </article>
+            <p><b> The src Attribute </b></p>
+            <p>The <code>< img></code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed:</p>
+            <code class="attribute" >< img src="img_girl.jpg >" </code>
+        </section>
+        <section class="main-sec" id="headings">
+            <header>HTML Headings</header>
+            <article>
+                <p>Headings are titles or subtitles that you want to display on a webpage.</p>
+                <p>HTML headings are defined with the <code>< h1></code> to <code>< h6></code>  tags.</p>
+                <ul>
+                    <li> <code class="hed-1"> < h1> Heading 1 < /h1> </code> </li>
+                    <li> <code class="hed-2"> < h2> Heading 2 < /h2> </code> </li>
+                    <li> <code class="hed-3"> < h3> Heading 3 < /h3> </code> </li>
+                    <li> <code class="hed-4"> < h4> Heading 4 < /h4> </code> </li>
+                    <li> <code class="hed-5"> < h5> Heading 5 < /h5> </code> </li>
+                    <li> <code class="hed-6"> < h6> Heading 6 < /h6> </code> </li>
+                </ul>
+                <p> <b> Headings <code>< h1 ></h1></code> Are Important </b></p>
+                <p>Search engines use the headings to index the structure and content of your web pages. <br> Users often skim a page by its headings. It is important to use headings to show the document structure. <br> <code> < h1> </code> headings should be used for main headings, followed by <code> < h2> </code> headings, then the less important <code>< h3></code>, and so on.</p> 
+            </article>
+        </section>
+        <section class="main-sec" id="paragraphs">
+            <header>HTML Paragraphs</header>
+            <article>
+                <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+                <p>The HTML <code>< p></code> element defines a paragraph. <br> A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+                <code class="paragraph"> < p > This is a paragraph. < / p> </code> <br>
+                <code class="paragraph"> < p > This is another paragraph. < / p> </code>
+            </article>
+        </section>
+        <section class="main-sec" id="text-formatting"> 
+            <header>HTML Text Formatting</header>
+            <article>
+                <p>HTML contains several elements for defining text with a special meaning.</p>
+                <ul>
+                    <li> <code> < b > </code> - Bold text</li>
+                    <li> <code> < strong > </code> - Important text</li>
+                    <li> <code> < i > </code> - Italic </li>
+                    <li> <code> < em > </code> - Emphasized text </li>
+                    <li> <code> < mark > </code> - Marked text </li>
+                    <li> <code> < small > </code> - Smaller text</li>
+                    <li> <code> < del > </code> - Deleted text</li>
+                    <li> <code> < ins > </code> - Inserted text</li>
+                    <li> <code> < sub > </code> - Subscript text</li>
+                    <li> <code> < sup > </code> - Superscript text</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-sec" id="comments">
+            <header>HTML Comments</header>
+            <article>
+                <p>Comments are not displayed in the browser, but they can help document your HTML source code.</p>
+                <p>With comments you can place notifications and reminders in your HTML code:</p> <br>
+               <ul> 
+                 <li>  <code style="color: green;"> < !-- This is comment -- ></code> </li>
+                 <li>  <code> < p> This is a paragraph < / p> </code> </li>
+                 <li>  <code style="color: green;"> < !-- < p> This is another paragraph < / p> -- ></code></li>
+            </ul> 
+            </article>
+        </section>
+        <section class="main-sec" id="canvas">
+            <header>HTML Canvas Graphics</header>
+            <article>
+                <p>The HTML <code> < canvas > </code>  element is used to draw graphics on a web page. <br>
+                   The graphic to the left is created with <code> < canvas > </code> . It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.</p>
+            </article>
+            <ul>
+                <li>The HTML <code> < canvas > </code>element is used to draw graphics, on the fly, via JavaScript.</li>
+                <li> The <code> < canvas > </code>element is only a container for graphics. You must use JavaScript to actually draw the graphics.</li>
+                <li> Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</li>
+                <li>Example: <code class="canvas"> < canvas id="myCanvas" width="200" height="100" > < / canvas >.</code></li>
+            </ul>
+        </section>
+        <section class="main-sec" id="reference">
+          <header>Reference</header>
+          <article>
+              <ul>
+                  <li> All the documentation in this page is taken from "<a href="https://www.w3schools.com/" target="_blank">w3schools</a>"</li>
+              </ul>
+          </article>    
+        </section>
+        <!-- section ends -->
+    </main>
+
+    <footer> Made by <a class="footer-a" href="https://mushamak.github.io/personal-webpage/" target="_blank">Musha</a></footer>
+
+</body>
+
+</html>
